@@ -11,3 +11,8 @@ html{
     --txt-white: #ffffff;
     --txt-black: #1E272E;
 }
+.slide{
+    max-width: 1920px;
+    height: 1035px;
+    background-image: url(./assets/images/BannerIndex2.jpg);
+}
