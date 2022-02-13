@@ -6,64 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación WEB II | Evidencia de aprendizaje</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 1110px">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <nav>
+            <a href="index.html"><img src="./assets/images/logoGris.svg" alt="Logotipo de la empresa"></a>
             <ul>
-                <li><a href="index.html"><img src="./assets/images/logoGris.svg" alt=""></a></li>
-                <li><a href="">INICIO</a></li>
-                <li><a href="">SERVICIOS</a></li>
-                <li><a href="">GALERIA</a></li>
-                <li><a href="">PROMOCIONES</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">PROMOCIONES</a></li>
+                <li><a href="#">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <section class="slide">
-        <div>
+        <div class="slide-contenedor">
             <img src="./assets/images/logoGris.svg" alt="Logotipo de la empresa">
             <p>DISTRIBUIDOR Y CENTRO DE SERVICIO AUTORIZADO POR TERMIZ </p>
             <p>SOMOS ESPECIALISTAS EN CALDERAS </p>
         </div>
     </section>
     <section class="columnas">
-        <div class="caja1">
-            <img src="./assets/images/logoBlanco.svg" alt="Logotipo de la empresa">
+        <div class="columnas-caja">
+            <img src="./assets/images/logoBlanco.svg" alt="Logotipo de la empresa" id="columnas-caja_imglogo">
         </div>
-        <div class="caja2">
-            <p>Estamos comprometidos en brindar soluciones adecuadas a problemas de operación y de funcionalidad a calderas y equipos generadores de vapor en general, asegurando su correcta operación y máximo rendimiento, a través de un servicio especializado de reparación y mantenimiento a sus equipos; contando con un equipo humano profesional e innovador para garantizar su plena y absoluta satisfacción.
+        <div class="columnas-caja">
+            <p>Estamos comprometidos en brindar soluciones adecuadas a problemas de operación y de funcionalidad a <strong>calderas y equipos generadores de vapor</strong> en general, asegurando su correcta operación y máximo rendimiento, a través de un servicio especializado de <strong>reparación y mantenimiento</strong> a sus equipos; contando con un equipo humano profesional e innovador para garantizar su plena y absoluta satisfacción.
             </p>
         </div>
-        <div class="caja3">
-            <img src="./assets/images/empresa.jpg" alt="Imagen de un edificio de la empresa">
+        <div class="columnas-caja columnas-caja__imagen">
+            <img src="./assets/images/empresa.jpg" alt="Imagen de un edificio de la empresa" id="columnas-caja__img-empresa">
         </div>
     </section>
     <section class="historia">
         <p>
-            La experiencia profesional de 30 años de servicio nos respaldan para ayudarle a seleccionar el equipo industrial más adecuado a sus necesidades, así como también para brindarle la solución más idónea a sus problemas de operación en calderas, lo cual nos permite sin lugar a dudas ofrecer servicios y productos de las más alta calidad a nuestros clientes como una opción seria y confiable.
-
-            En SERVICIO TÉCNICO A CALDERAS nuestra prioridad es usted por lo que le ofrecemos:
-
-
+            La experiencia profesional de 30 años de servicio nos respaldan para ayudarle a seleccionar el <strong> equipo industrial </strong>más adecuado a sus necesidades, así como también para brindarle la solución más idónea a sus problemas de operación en <strong>calderas</strong>, lo cual nos permite sin lugar a dudas ofrecer servicios y productos de las más alta calidad a nuestros clientes como una opción seria y confiable.
+            <br>
+            <br>
+            <br>
+            En <strong>SERVICIO TÉCNICO A CALDERAS </strong>nuestra prioridad es usted por lo que le ofrecemos:
         </p>
     </section>
     <section class="enlaces">
-        <div class="enlaces-caja1">
+        <div class="enlaces-caja">
             <img src="./assets/images/engrane.png" alt="Imagen de un engrane">
             <h3 class="nombreEnlace">SERVICIOS</h3>
         </div>
-        <div class="enlaces-caja2">
+        <div class="enlaces-caja">
             <img src="./assets/images/manometro.png" alt="Imagen de un manometro">
             <h3 class="nombreEnlace">PRODUCTOS</h3>
         </div>
-        <div class="enlaces-caja3">
+        <div class="enlaces-caja">
             <img src="./assets/images/caldera.png" alt="Imagen de una caldera">
             <h3 class="nombreEnlace">CALDERAS</h3>
         </div>
     </section>
     <section class="porque">
-        <p>¿PORQUÉ ADQUIRIR NUESTROS SERVICIOS?</p>
+        <h2>¿PORQUÉ ADQUIRIR NUESTROS SERVICIOS?</h2>
         <div class="porque-text">
             <ul>
                 <li>
@@ -90,15 +97,33 @@
         </div>
     </section>
     <footer>
-        <img src="./assets/images/logoGris.svg" alt="Logotipo de la empresa">
-        <p>Estamos para servirle, contáctenos.</p>
+        <img src="./assets/images/logoGris.svg" alt="Logotipo de la empresa" id="footer__img">
+        <p id="servirle">Estamos para servirle, contáctenos.</p>
         <div class="footer-secciones">
-            <div class="footer-secciones__enlaces"></div>
-            <div class="footer-secciones__direccion"></div>
-            <div class="footer-secciones__horario"></div>
-            <div class="footer-secciones__redes"></div>
+            <div class="footer-secciones__caja footer-secciones__enlaces">
+                <ul><li><a href="#">INICIO</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">PROMOCIONES</a></li>
+                <li><a href="#">CONTACTO</a></li></ul>
+            </div>
+            <div class="footer-secciones__caja  footer-secciones__direccion">
+                <p><strong>DIRECCIÓN</strong></p>
+                <img src="./assets/images/iconmonstr-location-25.svg" alt="imagen de un mapa">
+                <p>Juan de Dios Peza 190 Col. México C.P. 50720</p>
+            </div>
+            <div class="footer-secciones__caja  footer-secciones__horario">
+                <p><strong>HORARIOS DE ATENCIÓN</strong></p>
+                <p>Lunes a Viernes: 9:00am - 6:00 pm</p>
+                <p>Sábado: 9:00am - 2:00pm</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+            <div class="footer-secciones__caja  footer-secciones__redes">
+                <p><strong>SÍGUENOS</strong></p>
+                <img src="./assets/images/iconmonstr-facebook-4.svg" alt="Logotipo de Facebook">
+            </div>
         </div>
-        <p>COPYRIGHT | Sertec Calderas 2022 </p>
+        <p id="copyr">COPYRIGHT | Sertec Calderas 2022 </p>
     </footer>   
 </body>  
 </html>
