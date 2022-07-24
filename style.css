@@ -77,7 +77,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-.content__travels h1{
+h1{
     background-color: var(--fc-primary);
     color: var(--fc-secondary);
     height: 75px;
