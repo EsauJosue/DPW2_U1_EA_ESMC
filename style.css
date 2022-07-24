@@ -1,0 +1,167 @@
+:root{
+    --fc-primary: #0C2461;
+    --fc-secondary: #F6B93B;
+    --fc-white: #ffffff;
+    --fc-black: #222222;
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+}
+header{
+    background-color: var(--fc-primary);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    color: var(--fc-white);
+    list-style: none;
+}
+nav ul li a{
+    color: var(--fc-white);
+    text-decoration: none;
+    margin: 20px 5px;
+}
+.content{
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: var(--fc-primary);
+}
+.box1{
+    
+}
+.box2 p{
+    text-align: justify;
+  
+}
+.box3{
+    
+}
+.content__travels{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.content__travels h1{
+    background-color: var(--fc-primary);
+    color: var(--fc-secondary);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+.content__travels__item{
+    border: 2px solid var(--fc-primary);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.content__travels__item a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--fc-white);
+    background-color: var(--fc-primary);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.content__travels__item h2{
+    color: var(--fc-primary);
+    width: 100%;
+    border-bottom: 2px solid var(--fc-secondary);
+    margin: 10px auto;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.content__travels__item-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "det price";
+    padding: 20px;
+}
+
+.content__travels__item-details-left{
+    grid-area: det;
+    font-size: 1.4rem;
+}
+.content__travels__item-details-right{
+    grid-area: price;
+    border: 1px solid var(--fc-primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content__travels__item-details-right #precio{
+    color: var(--fc-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.content__travels__item-details-right p{
+    color: var(--fc-black);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.content__travels__item-details-right p strong{
+    color: var(--fc-black);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+    
+footer{
+    background-color: var(--fc-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 205px;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 30px;
+    gap: 10px;
+}
